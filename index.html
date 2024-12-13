@@ -4,58 +4,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kishan Chander</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #2c2c2c;
+            color: #33ff33;
+            font-family: 'VT323', monospace;
+            padding: 20px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .screen {
+            background-color: #000;
+            border: 20px solid #4a4a4a;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: inset 0 0 18px rgba(51, 255, 51, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .screen::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(
+                transparent 50%, 
+                rgba(0, 0, 0, 0.05) 50%
+            );
+            background-size: 100% 4px;
+            pointer-events: none;
+        }
+
+        h1, h2, h3 {
+            color: #33ff33;
+            text-shadow: 0 0 5px #33ff33;
+            margin-top: 20px;
+        }
+
+        a {
+            color: #00ff00;
+            text-decoration: none;
+            border-bottom: 1px solid #00ff00;
+        }
+
+        a:hover {
+            color: #ffffff;
+            border-bottom-color: #ffffff;
+            text-shadow: 0 0 8px #ffffff;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        li::before {
+            content: ">";
+            color: #33ff33;
+            margin-right: 10px;
+        }
+
+        .project {
+            border: 1px solid #33ff33;
+            padding: 15px;
+            margin: 15px 0;
+            background-color: rgba(0, 255, 0, 0.05);
+        }
+
+        em {
+            color: #ffff33;
+            font-style: normal;
+        }
+
+        strong {
+            color: #ff33ff;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 15px;
+            background: #33ff33;
+            animation: blink 1s infinite;
+            margin-left: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Kishan Chander</h1>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/kishanchander">linkedin.com/in/kishanchander</a></p>
-    <p>I build AI stuffs! 🤖</p>
-    <p><strong>Mail me:</strong> <a href="mailto:kchander2601@gmail.com">kchander2601@gmail.com</a></p>
+    <div class="screen">
+        <h1>> Kishan Chander<span class="cursor"></span></h1>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/kishanchander">linkedin.com/in/kishanchander</a></p>
+        <p>I build AI stuffs!</p>
+        <p><strong>Mail me:</strong> <a href="mailto:kchander2601@gmail.com">kchander2601@gmail.com</a></p>
 
-    <h2>Projects</h2>
+        <h2>> Projects_</h2>
 
-    <div>
-        <h3>IndieScore - <a href="https://indiescore.me">https://indiescore.me</a></h3>
-        <p><em>Lead Developer | Jul 2024 - Present</em></p>
-        <ul>
-            <li>Developed a SaaS platform that generates short highlight clips from online meetings.</li>
-            <li>Achieved #14 on Product Hunt with 139 upvotes and received positive feedback.</li>
-        </ul>
+        <div class="project">
+            <h3>Nails AI - <a href="https://apps.apple.com/us/app/nails-ai-glow-up-for-nails/id6739025053">https://apps.apple.com/us/app/nails-ai-glow-up-for-nails/id6739025053</a></h3>
+            <p><em>Lead Developer | Dec 2024 - Present</em></p>
+            <ul>
+                <li>Developed an AI-powered nail design app for instant nail makeovers.</li>
+                <li>Used LLMs + Image generator to generate personalized nail designs.</li>
+                <li>Creates step-by-step guides for recreating AI-generated designs.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>IndieScore - <a href="https://indiescore.me">https://indiescore.me</a></h3>
+            <p><em>Lead Developer | Jul 2024 - Present</em></p>
+            <ul>
+                <li>Developed a SaaS platform that generates short highlight clips from online meetings.</li>
+                <li>Achieved #14 on Product Hunt with 139 upvotes and received positive feedback.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>CallFlow - <a href="https://callflow.tech">https://callflow.tech</a></h3>
+            <p><em>Lead Developer | Jun 2024 - Jul 2024</em></p>
+            <ul>
+                <li>Developed an AI-powered receptionist service to manage customer interactions 24/7.</li>
+                <li>Enhanced customer satisfaction and operational efficiency.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>Tusy - <a href="https://tusy.tech">https://tusy.tech</a></h3>
+            <p><em>Lead Developer | Mar 2024 - Jun 2024</em></p>
+            <ul>
+                <li>Created a Generative AI mobile app for virtual dress try-ons.</li>
+                <li>Selected for the "Microsoft for Startups" program.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>AlterMe</h3>
+            <p><em>Lead Developer | Dec 2023 - Jan 2024</em></p>
+            <ul>
+                <li>Developed an AI-powered app that predicts the user's future looks.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>Pico Forms</h3>
+            <p><em>Lead Developer | Nov 2023 - Dec 2023</em></p>
+            <ul>
+                <li>Built an online form builder SaaS with LLMs for enhanced participant interaction.</li>
+            </ul>
+        </div>
+
+        <p><strong>Location:</strong> Chennai, Tamil Nadu, India</p>
     </div>
-
-    <div>
-        <h3>CallFlow - <a href="https://callflow.tech">https://callflow.tech</a></h3>
-        <p><em>Lead Developer | Jun 2024 - Jul 2024</em></p>
-        <ul>
-            <li>Developed an AI-powered receptionist service to manage customer interactions 24/7.</li>
-            <li>Enhanced customer satisfaction and operational efficiency.</li>
-        </ul>
-    </div>
-
-    <div>
-        <h3>Tusy - <a href="https://tusy.tech">https://tusy.tech</a></h3>
-        <p><em>Lead Developer | Mar 2024 - Jun 2024</em></p>
-        <ul>
-            <li>Created a Generative AI mobile app for virtual dress try-ons.</li>
-            <li>Selected for the "Microsoft for Startups" program.</li>
-        </ul>
-    </div>
-
-    <div>
-        <h3>AlterMe</h3>
-        <p><em>Lead Developer | Dec 2023 - Jan 2024</em></p>
-        <ul>
-            <li>Developed an AI-powered app that predicts the user's future looks.</li>
-        </ul>
-    </div>
-
-    <div>
-        <h3>Pico Forms</h3>
-        <p><em>Lead Developer | Nov 2023 - Dec 2023</em></p>
-        <ul>
-            <li>Built an online form builder SaaS with LLMs for enhanced participant interaction.</li>
-        </ul>
-    </div>
-
-    <p><strong>Location:</strong> Chennai, Tamil Nadu, India</p>
 </body>
 </html>
