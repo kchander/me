@@ -3,178 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kishan Chander</title>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>hi, i'm kishan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.min.css">
     <style>
+        :root {
+            --text-primary: #333333;
+            --text-secondary: #595959;
+            --bg-color: #ffffff;
+            --link-color: #333333;
+            --border-color: #eaeaea;
+            --revenue-color: #2ea043;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
         body {
-            background-color: #2c2c2c;
-            color: #33ff33;
-            font-family: 'VT323', monospace;
-            padding: 20px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
             line-height: 1.6;
-            max-width: 800px;
+            max-width: 640px;
             margin: 0 auto;
+            padding: 3rem 1.5rem;
+            font-size: 15px;
+            font-weight: 400;
         }
 
-        .screen {
-            background-color: #000;
-            border: 20px solid #4a4a4a;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: inset 0 0 18px rgba(51, 255, 51, 0.3);
-            position: relative;
-            overflow: hidden;
+        h1 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.01em;
         }
 
-        .screen::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(
-                transparent 50%, 
-                rgba(0, 0, 0, 0.05) 50%
-            );
-            background-size: 100% 4px;
-            pointer-events: none;
+        h2 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
         }
 
-        h1, h2, h3 {
-            color: #33ff33;
-            text-shadow: 0 0 5px #33ff33;
-            margin-top: 20px;
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
         }
 
         a {
-            color: #00ff00;
+            color: var(--link-color);
             text-decoration: none;
-            border-bottom: 1px solid #00ff00;
+            border-bottom: 1px solid var(--border-color);
+            transition: border-color 0.2s ease;
+            font-weight: 500;
         }
 
         a:hover {
-            color: #ffffff;
-            border-bottom-color: #ffffff;
-            text-shadow: 0 0 8px #ffffff;
+            border-color: var(--text-secondary);
         }
 
-        ul {
-            list-style-type: none;
-            padding-left: 20px;
+        .intro {
+            margin-bottom: 2rem;
         }
 
-        li::before {
-            content: ">";
-            color: #33ff33;
-            margin-right: 10px;
+        .section {
+            margin: 2.5rem 0;
         }
 
-        .project, .experience {
-            border: 1px solid #33ff33;
-            padding: 15px;
-            margin: 15px 0;
-            background-color: rgba(0, 255, 0, 0.05);
+        .project {
+            margin-bottom: 1.5rem;
         }
 
-        em {
-            color: #ffff33;
-            font-style: normal;
+        .project-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
         }
 
-        strong {
-            color: #ff33ff;
+        .project-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
         }
 
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
+        .date {
+            color: #8a8a8a;
+            font-size: 0.85rem;
+            margin-bottom: 0.35rem;
         }
 
-        .cursor {
+        .link {
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .revenue-marker {
+            color: var(--revenue-color);
+            font-weight: 600;
+        }
+
+        .legend {
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+            color: #8a8a8a;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .now {
             display: inline-block;
-            width: 8px;
-            height: 15px;
-            background: #33ff33;
-            animation: blink 1s infinite;
-            margin-left: 5px;
+            background-color: #f3f3f3;
+            padding: 0.15rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-left: 0.5rem;
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <div class="screen">
-        <h1>> Kishan Chander<span class="cursor"></span></h1>
-        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/kishanchander">linkedin.com/in/kishanchander</a></p>
-        <p>I build AI stuffs!</p>
-        <p><strong>Mail me:</strong> <a href="mailto:kchander2601@gmail.com">kchander2601@gmail.com</a></p>
+    <div class="intro">
+        <h1>hi, i'm kishan</h1>
+        <p>i build AI stuff that solves real problems. currently working on something exciting that lets you bend websites to your will — literally any website.</p>
+        <p>i recently took the leap and left my job to pursue this full-time. when you're onto something big, sometimes you just have to go all in.</p>
+        <p>if you're building something interesting in AI, let's chat! reach me at <a href="mailto:kchander2601@gmail.com">kchander2601@gmail.com</a> or find me on <a href="https://x.com/kishanchander_">x</a>.</p>
+    </div>
 
-        <h2>> Projects_</h2>
+    <div class="section">
+        <h2>things i've built</h2>
+        <div class="legend"><span class="revenue-marker">$</span> = stuff that generates revenue</div>
 
         <div class="project">
-            <h3>Magix - <a href="https://magix-frontend.vercel.app">https://magix-frontend.vercel.app</a></h3>
-            <p><em>Lead Developer | Mar 2025 - Present</em></p>
-            <ul>
-                <li>Developed an autonomous AI platform that deploys AI agents for browser control and task execution.</li>
-                <li>Enhanced efficiency by enabling concurrent deployment of multiple AI agents.</li>
-                <li>Integrated 'browse-use' for web interactions and Steel Virtual Browser for secure browsing.</li>
-                <li>Built with Next.js frontend, Python backend, and Supabase for database management.</li>
-            </ul>
+            <div class="project-title">website bender <span class="now">now</span></div>
+            <div class="date">2025 • ongoing</div>
+            <p class="project-desc">my current obsession: building a tool that lets you manipulate any website exactly how you want it. took the leap and left my job to work on this full-time because I believe it could change how we interact with the web.</p>
         </div>
 
         <div class="project">
-            <h3>IndieScore</h3>
-            <p><em>Lead Developer | Jul 2024 - Nov 2024</em></p>
-            <ul>
-                <li>Developed a SaaS platform that generates short highlight clips from online meetings.</li>
-                <li>Achieved #14 on Product Hunt with 139 upvotes and received positive feedback.</li>
-                <li>Implemented scalable backend architecture handling concurrent processing of multiple video streams.</li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <h3>CallFlow</h3>
-            <p><em>Lead Developer | Jun 2024 - Jul 2024</em></p>
-            <ul>
-                <li>Developed an AI-powered receptionist service to manage customer interactions 24/7.</li>
-                <li>Enhanced customer satisfaction and operational efficiency.</li>
-                <li>Implemented robust integration systems connecting voice processing, scheduling, and customer management.</li>
-                <li>Developed RESTful APIs for seamless third-party service integration.</li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <h3>Tusy</h3>
-            <p><em>Lead Developer | Mar 2024 - Jun 2024</em></p>
-            <ul>
-                <li>Led the creation of a virtual try-on application for visualizing apparel before purchasing.</li>
-                <li>Partnered with Microsoft for Startups, ensuring wide exposure and application adoption on Google Play.</li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <h3>AlterMe</h3>
-            <p><em>Developer | Dec 2023 - Jan 2024</em></p>
-            <ul>
-                <li>Developed a mobile application using AI to provide personalized, future appearance predictions.</li>
-                <li>Leveraged generative AI and cloud integration for a seamless user experience.</li>
-            </ul>
+            <div class="project-title">nails ai <span class="revenue-marker">$</span></div>
+            <div class="date">2025</div>
+            <p class="project-desc">a pinterest killer for nail inspiration. generates beautiful nail design ideas with AI that people actually use (and pay for!). turns out people really want to see how different styles would look before heading to the salon.</p>
         </div>
         
-        <h2>> Work Experience_</h2>
-
-        <div class="experience">
-            <h3>Spartan Technologies Private Limited</h3>
-            <p><em>Software Developer - AI & LLM | Dec 2024 - Present</em></p>
-            <ul>
-                <li>Architected and delivered enterprise-scale AI solutions within aggressive timeframes.</li>
-                <li>Redesigned and delivered a critical client project overnight, ensuring zero business impact.</li>
-                <li>Led the implementation of high-performance video transcription and intelligent web scraping solutions.</li>
-                <li>Designed and deployed scalable LLM-powered applications for enterprise technology services.</li>
-                <li>Established coding standards and best practices, improving code quality and maintainability.</li>
-            </ul>
+        <div class="project">
+            <div class="project-title">meeting prep ai</div>
+            <div class="date">2025</div>
+            <p class="project-desc">ever walk into a meeting unprepared? this app deep researches meeting context and attendees, giving you a heads-up overview with talking points. it even listens during the meeting and generates a personalized post-meeting action page with email drafts.</p>
         </div>
 
-        <p><strong>Location:</strong> Chennai, Tamil Nadu, India</p>
+        <div class="project">
+            <div class="project-title">local ai file finder</div>
+            <div class="date">2025</div>
+            <p class="project-desc">built with electron and local AI embeddings, this app lets you find files across your system using natural language. just ask "find the cover letter i sent to perplexity" and it actually understands what you mean. no more digging through folders!</p>
+        </div>
+
+        <div class="project">
+            <div class="project-title">ai workers</div>
+            <div class="date">march 2025</div>
+            <p class="project-desc">a platform where AI agents can browse the web and complete tasks for you. think of it as your digital assistant that can actually use websites and apps. built with next.js, python, and lots of coffee.</p>
+        </div>
+
+        <div class="project">
+            <div class="project-title">car backdrop</div>
+            <div class="date">2024</div>
+            <p class="project-desc">a web app that transforms amateur car photos into professional-looking showroom images. used car sellers upload their photos, and the app replaces backgrounds and adjusts lighting to make every vehicle look its best.</p>
+        </div>
+
+        <div class="project">
+            <div class="project-title">indiescore</div>
+            <div class="date">july - november 2024</div>
+            <p class="project-desc">ever been in a long meeting and wished you could just get the highlights? that's what indiescore does - it creates short clips from your meetings so you don't miss the important parts. made it to #14 on product hunt!</p>
+        </div>
+
+        <div class="project">
+            <div class="project-title">callflow</div>
+            <div class="date">june - july 2024</div>
+            <p class="project-desc">an AI receptionist that handles calls 24/7. it schedules appointments, answers questions, and makes sure no customer interaction falls through the cracks. perfect for small businesses who can't afford a full-time receptionist.</p>
+        </div>
+
+        <div class="project">
+            <div class="project-title">tusy</div>
+            <div class="date">march - june 2024</div>
+            <p class="project-desc">a virtual try-on app that lets you see how clothes would look on you before buying. partnered with microsoft for startups on this one and got it onto google play!</p>
+        </div>
+
+        <div class="project">
+            <div class="project-title">alterme</div>
+            <div class="date">december 2023 - january 2024</div>
+            <p class="project-desc">curious what you might look like in the future? alterme uses AI to create personalized appearance predictions. it was a fun project that taught me a lot about generative AI.</p>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>work history</h2>
+        <p>i recently left <strong>spartan technologies</strong> (december 2024 - april 2025) to work full-time on my "website bender" project. while there, i built enterprise AI solutions and helped businesses leverage the power of large language models.</p>
+    </div>
+
+    <div class="footer">
+        based in chennai, india • always open to interesting conversations
     </div>
 </body>
 </html>
